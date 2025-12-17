@@ -290,22 +290,77 @@
     .share-btn:hover {
         background: #3d7a34;
     }
+    
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+        .stats-container {
+            padding: 30px 15px;
+        }
+        
+        .stats-header {
+            flex-direction: column;
+            gap: 15px;
+            text-align: center;
+        }
+        
+        .title {
+            font-size: 36px;
+        }
+        
+        .count-number {
+            font-size: 64px;
+        }
+        
+        .count-label {
+            font-size: 16px;
+        }
+        
+        .section-title {
+            font-size: 20px;
+        }
+        
+        .milestones {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .milestone-target {
+            font-size: 24px;
+        }
+        
+        .share-buttons {
+            flex-direction: column;
+        }
+        
+        .line-chart svg {
+            height: 180px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .count-number {
+            font-size: 48px;
+        }
+        
+        .milestones {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
 
 <div class="stats-container">
     <div class="stats-content">
         <div class="stats-header">
-            <h1 class="title">stats</h1>
-            <a href="/" class="back-btn">← back</a>
+            <h1 class="title">Stats</h1>
+            <a href="/" class="back-btn">← Back</a>
         </div>
         
         <div class="current-count">
             <div class="count-number">{data.currentCount ?? '—'}</div>
-            <div class="count-label">hackers rooted</div>
+            <div class="count-label">Hackers Rooted</div>
         </div>
         
         <div class="share-section">
-            <p class="share-label">spread the word</p>
+            <p class="share-label">Spread the word</p>
             <div class="share-buttons">
                 <a 
                     href="https://twitter.com/intent/tweet?text={encodeURIComponent(`${data.currentCount} hackers already signed up for Rooted! Join us: `)}&url={encodeURIComponent('https://rooted.hackclub.com')}" 
@@ -313,10 +368,10 @@
                     rel="noopener"
                     class="share-btn"
                 >
-                    tweet
+                    Tweet
                 </a>
                 <button class="share-btn" onclick={() => {navigator.clipboard.writeText('https://rooted.hackclub.com'); alert('Link copied!')}}>
-                    copy link
+                    Copy Link
                 </button>
             </div>
         </div>
@@ -328,7 +383,7 @@
         {/if}
         
         <div class="section">
-            <h2 class="section-title">growth</h2>
+            <h2 class="section-title">Growth</h2>
             {#if history.length > 1}
                 {@const points = history.slice(-30)}
                 <div class="line-chart">
@@ -374,7 +429,7 @@
         </div>
         
         <div class="section">
-            <h2 class="section-title">milestone predictions</h2>
+            <h2 class="section-title">Milestone Predictions</h2>
             <div class="milestones">
                 {#each milestones as target}
                     <div class="milestone" class:reached={data.currentCount >= target}>

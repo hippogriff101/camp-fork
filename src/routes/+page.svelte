@@ -51,15 +51,15 @@
         <div class="firefly"></div>
         
         <div class="bg-content">
-            <h2>rooted</h2>
+            <h2>Rooted</h2>
             {#if data.rsvpCount !== null}
                 <p class="rsvp-count">{data.rsvpCount} already rooted</p>
             {/if}
-            <a href="https://forms.hackclub.com/camprsvp" class="rsvp-btn" target="_blank" rel="noopener">rsvp</a>
-            <a href="/stats" class="stats-link">view live stats →</a>
+            <a href="https://forms.hackclub.com/camprsvp" class="rsvp-btn" target="_blank" rel="noopener">RSVP</a>
+            <a href="/stats" class="stats-link">View live stats →</a>
         </div>
         <div style="position: absolute; top: 30px; right: 30px; z-index: 1;">
-            <a href="/about" class="info-btn">what is this?</a>
+            <a href="/about" class="info-btn">What is this?</a>
         </div>
     </div>
 {/if}
