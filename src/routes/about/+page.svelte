@@ -81,7 +81,7 @@
                     <div class="org-content">
                         <img src="/profilepic/mahad.png" alt="Mahad's Profile Picture" class="org-pic">
                     <p class="faq-answer">
-                        Mahad is one of the Co-Organiser for Rooted. He is a amazing developer and also works for Hack Club.
+                        Mahad is one of the Co-Organiser for Rooted. He is an amazing developer and also works for Hack Club.
                     </p>
                     </div>
                 </div>
