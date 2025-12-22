@@ -1,7 +1,3 @@
-<script>
-    let bornhackOpen = $state(false);
-</script>
-
 <style>
     @import "../styles.css";
 </style>
