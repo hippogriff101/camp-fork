@@ -76,7 +76,7 @@
         </nav>
         
         <footer class="footer">
-            <p style="font-size: 20px;">Made with ❤️ by Hack Clubers</p>
+            <p style="font-size: 20px;">Made with ❤️ by Hack Clubbers</p>
             <br>
             <a href="https://github.com/hackclub/rooted" target="_blank" rel="noopener">All code is Open Sourced here!</a>
             <br>
