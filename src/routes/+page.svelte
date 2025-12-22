@@ -72,6 +72,10 @@
         </div>
         <div style="position: absolute; top: 30px; right: 30px; z-index: 1;">
             <a href="/about" class="info-btn">What is this?</a>
+            
+        </div>
+        <div style="position: absolute; top: 100px; right: 30px; z-index: 1;">
+            <a href="/orgs" class="info-btn">Meet the Orgs!</a>
         </div>
     </div>
 {/if}
