@@ -63,7 +63,7 @@
                 <div class="collapsible-content">
                     <div class="bornhack-info">
                         <p>
-                            We have a dedicated team of teens hackers working with Hack Club to make Rooted happen!
+                            We have a dedicated team of teen hackers working with Hack Club to make Rooted happen!
                         </p>
                     </div>
                 <div class="faq-item">
